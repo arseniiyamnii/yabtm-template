@@ -1,0 +1,12 @@
+{
+    "name":"yabtm template",
+    "fields":[
+        "name",
+        "license": [ 
+          "MIT",
+          "APACHE",
+          "GNU"
+        ],
+        "description"
+    ]
+}
