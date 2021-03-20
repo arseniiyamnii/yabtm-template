@@ -1,0 +1,11 @@
+{
+    "name":"license",
+    "fields":{
+        "year":{"ask":"Year:","value":"false","save":"true","content":"","temp":""},
+        "name":{"ask":"Your Name:","value":"false","save":"true","content":"","temp":""},
+        "license":{"ask":"Your license:","value":["MIT","Apache"],"save":"false","temp":""
+        }
+    },
+    "files":[
+    "LICENSE"]
+}
