@@ -1,1 +1,1 @@
-{"name": "license", "fields": {"name": {"ask": "Your Name: ", "value": "false"}, "license": {"ask": "Choose your license: ", "value": ["MIT", "Apache"]}, "year": {"ask": "Year: ", "value": "false"}}, "files": []}
+{"name": "license", "fields": {"name": {"ask": "Your Name: ", "value": "false"}, "license": {"ask": "Choose your license: ", "value": ["MIT", "Apache"]}, "year": {"ask": "Year: ", "value": "false"}, "projectName": {"ask": "Your project name: ", "value": "false"}}, "files": [".lvimrc", "README.md", "LICENSE"]}

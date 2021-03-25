@@ -1,0 +1,42 @@
+"Set up path. For watch your path, check : let g:path_to_localvimrc
+"
+let g:path_to_localvimrc=getcwd()
+let g:path_to_localvimrc="{{projectPath}}"
+
+"if session without file, add trigger for save project
+"else - dont save project
+"
+if @% ==""
+	let save_session_trigger="1"
+else
+	let save_session_trigger="0"
+endif
+
+"restore session only if vim without file
+"else - dont restore
+"
+fu! RestoreSess()
+	if @% == ""
+		if filereadable(g:path_to_localvimrc . '/.session.vim')
+			execute 'source'. g:path_to_localvimrc .'/.session.vim'
+		endif
+	endif
+endfunction
+
+"func for save session
+"
+fu! SaveSess()
+	execute 'mksession!'. g:path_to_localvimrc .'/.session.vim'
+endfunction
+
+"run load session
+"
+au VimEnter * call RestoreSess()
+
+"if session opened without file,
+"save session
+"
+if save_session_trigger == "1"
+	autocmd VimLeave * call SaveSess()
+endif
+
